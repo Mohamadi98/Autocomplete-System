@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/styles.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="search-input">
+        <input id="search-bar" type="text" placeholder="type to search...">
+        <div class="autocomp-list">
+        </div>
+        <div class="icon"><i class="fa fa-search"></i></div>
+    </div>
+</div>
+<div class="insertion">
+    <h2>If you didn't find autocompletion for your word please, type the full word then click insert below</h2>
+    <input id="insertion-input" type="text" placeholder="type the full word here...">
+    <button id="insertion-button">insert</button>
+
+</div>
+
+<script th:src="@{/app.js}"></script>
+</body>
+</html>
